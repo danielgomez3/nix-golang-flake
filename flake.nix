@@ -17,7 +17,7 @@
     {
       devShells.${currentSystem}.default = pkgs.mkShell { 
         buildInputs = with pkgs; [
-          go delve 
+          go delve yaegi
         ];  # deps needed at runtime.
         GREETING = "Hello, Nix!";
         shellHook = ''
