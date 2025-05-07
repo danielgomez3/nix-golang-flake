@@ -18,6 +18,7 @@
       devShells.${currentSystem}.default = pkgs.mkShell { 
         buildInputs = with pkgs; [
           go delve yaegi
+          sqlite goose  # project-specific
         ];  # deps needed at runtime.
         GREETING = "Hello, Nix!";
         shellHook = ''
