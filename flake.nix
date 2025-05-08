@@ -21,6 +21,7 @@
           sqlite goose  # project-specific
           litecli sqlitebrowser # dev
           postgresql
+          vim
         ];  # deps needed at runtime.
         GREETING = "Hello, Nix!";
         #GOOSE_DRIVER="postgres";
