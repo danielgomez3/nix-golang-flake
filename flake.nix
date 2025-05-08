@@ -20,6 +20,7 @@
           go delve yaegi # GO
           sqlite goose  # project-specific
           litecli sqlitebrowser # dev
+          postgresql
         ];  # deps needed at runtime.
         GREETING = "Hello, Nix!";
         GOOSE_DRIVER="postgres";
