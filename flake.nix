@@ -23,12 +23,14 @@
           postgresql
         ];  # deps needed at runtime.
         GREETING = "Hello, Nix!";
-        GOOSE_DRIVER="postgres";
-        GOOSE_DBSTRING="user=citizix_user password=pcDFBXo5yX host=10.2.11.10 dbname=citizix_app sslmode=disable";
+        #GOOSE_DRIVER="postgres";
+        #GOOSE_DBSTRING="user=citizix_user password=pcDFBXo5yX host=10.2.11.10 dbname=citizix_app sslmode=disable";
 
         shellHook = ''
           ${pkgs.pfetch}/bin/pfetch
           echo $GREETING
+          export GOOSE_DRIVER=postgres
+          export GOOSE_DBSTRING="user=citizix_user password=pcDFBXo5yX host=10.2.11.10 dbname=citizix_app sslmode=disable"
         '';
       };
 
