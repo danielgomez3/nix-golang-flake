@@ -17,7 +17,7 @@
     {
       devShells.${currentSystem}.default = pkgs.mkShell { 
         buildInputs = with pkgs; [
-          go delve yaegi # GO
+          go delve gore # GO
           sqlite goose  # project-specific
           litecli sqlitebrowser # dev
           postgresql
