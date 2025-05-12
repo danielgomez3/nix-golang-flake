@@ -18,9 +18,7 @@
       devShells.${currentSystem}.default = pkgs.mkShell { 
         buildInputs = with pkgs; [
           go delve gore # GO
-          sqlite goose  # project-specific
-          litecli sqlitebrowser # dev
-          postgresql
+          sqlite goose litecli sqlitebrowser postgresql sqlfluff # sql
           vim
         ];  # deps needed at runtime.
         GREETING = "Hello, Nix!";
