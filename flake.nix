@@ -19,7 +19,7 @@
         buildInputs = with pkgs; [
           go delve gore # GO
           sqlite goose litecli sqlitebrowser postgresql sqlfluff # sql
-          vim
+          vim jq
         ];  # deps needed at runtime.
         GREETING = "Hello, Nix!";
         GOOSE_DRIVER="sqlite3";
